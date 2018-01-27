@@ -9,6 +9,22 @@
 - **Base64字符串转成图片**
 - **图片转成Base64字符串**
 
+## 如何使用
+Step 1. Add it in your root build.gradle at the end of repositories:
+```
+	allprojects {
+	    repositories {
+	        maven { url 'https://jitpack.io' }
+	    }
+	}
+```
+Step 2. Add the dependency
+```
+	dependencies {
+	    compile 'com.github.mengpeng920223:EncryptAndroid:v1.0.0'
+	}
+```
+
 
 ## RSA加密，解密
 
