@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mengpeng.encrypt.Md5Activity">
+
+    <EditText
+        android:id="@+id/md5EncodeEt"
+        android:text="北京降雪图1234567890"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/md5EncodeBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MD5加密" />
+
+    <TextView
+        android:id="@+id/md5EncodeContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp" />
+
+</LinearLayout>

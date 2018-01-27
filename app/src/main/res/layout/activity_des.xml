@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mengpeng.encrypt.DesActivity">
+    <!--输入要加密的内容-->
+    <EditText
+        android:id="@+id/des_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入要加密内容" />
+
+    <EditText
+        android:id="@+id/des_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/des_input"
+        android:hint="请输入密码"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btn_des_encode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/des_password"
+        android:onClick="btnDESEncode"
+        android:text="DES加密" />
+
+    <TextView
+        android:id="@+id/show_desEncode_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_des_encode" />
+
+    <Button
+        android:id="@+id/btn_des_decode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/show_desEncode_result"
+        android:onClick="btnDESDecode"
+        android:text="DES解密" />
+
+    <TextView
+        android:id="@+id/show_desDecode_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_des_decode" />
+</RelativeLayout>
+
